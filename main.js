@@ -95,13 +95,21 @@ function movePaddle(){
     //Surrounding wall detection
     //To the right side
     
+    
+    if(paddle.x >= canvas.width) {
 
+        paddle.x -= 24;
+    }
+
+    
+    if(paddle.x <= 0) {
+
+        paddle.x += 20;
+    }
     //Surrounding wall collision detection(y-axis)
     //top and bottom walls
     
 
-    //Surrounding wall detection
-    //To the left side
     
 }
 
